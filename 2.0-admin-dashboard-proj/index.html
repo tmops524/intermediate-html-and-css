@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <!-- Drawer -->
+    <div class="drawer">
+      <div class="dashboard menu-item">
+        <span class="material-symbols-outlined"> dashboard </span>
+        <h1>Dashboard</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> home </span>
+        <h1>Home</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> person </span>
+        <h1>Profile</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> chat </span>
+        <h1>Messages</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> history </span>
+        <h1>History</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> task </span>
+        <h1>Tasks</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> communities </span>
+        <h1>Communities</h1>
+      </div>
+      <!-- Need extra spacing, nth child selector -->
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> settings </span>
+        <h1>Settings</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> help </span>
+        <h1>Support</h1>
+      </div>
+      <div class="menu-item">
+        <span class="material-symbols-outlined"> shield_lock </span>
+        <h1>Privacy</h1>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Top Section -->
+      <div class="top-nav">
+        <!-- Search icon & search bar -->
+        <div class="search">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+          <input
+            type="text"
+            name="search"
+            autocomplete="off"
+            placeholder="Search"
+          />
+        </div>
+        <div class="account">
+          <div class="menu-item">
+            <span class="material-symbols-outlined">
+              notifications_active
+            </span>
+          </div>
+          <!-- Avatar from Github -->
+          <div class="gh-avatar"></div>
+          <!-- Username -->
+          <p class="name">tmops524</p>
+        </div>
+      </div>
+      <!-- Bottom Section -->
+      <div class="bottom-nav">
+        <div class="profile">
+          <!-- Profile details -->
+          <div class="gh-avatar"></div>
+          <div class="profile-name">
+            <p class="greeting">Hi there,</p>
+            <p class="name">
+              tmops524 <span class="username">(@tmops524)</span>
+            </p>
+          </div>
+        </div>
+        <!-- Button section -->
+        <div class="buttons">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div class="projects">
+        <h3>Your Projects</h3>
+
+        <!-- Section for all project cards -->
+        <div class="cards">
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Super Cool Project</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Provident, et. Ducimus mollitia iure nam harum commodi sunt qui id
+              eveniet.
+            </p>
+            <div class="icons">
+              <span class="material-symbols-outlined"> heart_plus </span>
+              <span class="material-symbols-outlined"> visibility </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Less Cool Project</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              dicta ratione reiciendis ea ad! Aspernatur libero laborum natus ab
+              necessitatibus dignissimos, hic sed labore nihil.
+            </p>
+            <div class="icons">
+              <span class="material-symbols-outlined"> heart_plus </span>
+              <span class="material-symbols-outlined"> visibility </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Impossible App</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              nostrum unde facere maxime dolor veritatis.
+            </p>
+            <div class="icons">
+              <span class="material-symbols-outlined"> heart_plus </span>
+              <span class="material-symbols-outlined"> visibility </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Easy Peasy App</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, dolorum.
+            </p>
+            <div class="icons">
+              <span class="material-symbols-outlined"> heart_plus </span>
+              <span class="material-symbols-outlined"> visibility </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Ad Blocker</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis necessitatibus voluptates facilis laboriosam cupiditate
+              laborum exercitationem voluptatum soluta! Veniam, expedita!
+            </p>
+            <div class="icons">
+              <span class="material-symbols-outlined"> heart_plus </span>
+              <span class="material-symbols-outlined"> visibility </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Money Maker</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus reiciendis quos maiores atque modi neque dolore quam
+              velit vero quaerat ad molestiae, architecto, nostrum perspiciatis!
+            </p>
+            <div class="icons">
+              <span class="material-symbols-outlined"> heart_plus </span>
+              <span class="material-symbols-outlined"> visibility </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Side content - announcements & trending -->
+
+      <!-- Announcements -->
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <ul class="card">
+          <!-- List of individual announcements -->
+          <li class="announcement">
+            <h5 class="card-title">Site Maintenance</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              maxime, assumenda consectetur unde officia quas!
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Community Share Day</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam praesentium beatae, ab aspernatur dignissimos id
+              numquam nihil nulla!
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Updated Privacy Policy</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              ullam adipisci possimus?
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="trending">
+        <h3>Trending</h3>
+        <ul class="card">
+          <!-- List of trending items -->
+          <li class="trend trend-1">
+            <div class="gh-avatar-2"></div>
+            <div class="account">
+              <p class="username">@tegan</p>
+              <p class="name card-text">World Peace Builder</p>
+            </div>
+          </li>
+          <li class="trend trend-2">
+            <div class="gh-avatar"></div>
+            <div class="account">
+              <p class="username">@tmops524</p>
+              <p class="name card-text">Super Cool Project</p>
+            </div>
+          </li>
+          <li class="trend trend-3">
+            <div class="gh-avatar-3"></div>
+            <div class="account">
+              <p class="username">@kendall</p>
+              <p class="name card-text">Life Changing App</p>
+            </div>
+          </li>
+          <li class="trend trend-4">
+            <div class="gh-avatar-4"></div>
+            <div class="account">
+              <p class="username">@alex</p>
+              <p class="name card-text">No Traffic Maker</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
